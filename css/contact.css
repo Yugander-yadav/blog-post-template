@@ -1,0 +1,45 @@
+.contact-content{
+    height:80vh;
+    margin-top: 20px;
+    position: relative;
+    ;
+
+}
+.contact-content::before{
+    content:"";
+    width: 100vw;
+    background:url("../Assets/article1.jpg");
+    background-size: cover;
+    position:absolute;
+    width: 100%;
+    height: inherit;
+    top: 0;
+    opacity: 0.20;
+}
+.contact-form form{
+    margin: auto;
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+    height: 40vh;
+    background-color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    
+    
+}
+.contact-input input,textarea{
+    width: 40vw;
+}
+
+.contact-btn{
+    width: 70px ;
+    align-self: flex-start;
+}
+
+.contact-btn:hover{
+    font-weight: bolder;
+    
+}

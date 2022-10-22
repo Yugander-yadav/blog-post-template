@@ -1,0 +1,179 @@
+#navigation{
+margin-top: 20px;
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+font-family: var(--font-1);
+position: sticky;
+top:0;
+background-color: rgb(255, 255, 255);
+z-index: 2;
+
+
+
+}
+.logo{
+    text-decoration: none;
+    color: black;
+   width: auto;
+}
+.nav-left{
+font-size: 38px;
+}
+.nav-center{
+     width:50vw;
+     
+    
+    
+}
+.nav-center ul{
+list-style: none;
+
+display: flex;
+justify-content: space-around;
+}
+.nav-center ul li a{
+    
+    text-decoration: none;
+    
+    color:black;
+    transition: all 0.1s ease-in-out;
+    font-size:20px;
+}
+
+.nav-center ul li a:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.nav-right{
+
+}
+.form-input{
+    padding:3px 3px;
+    border-radius: 4px;
+    font-size:16px; 
+    font-family: var(--font-1);
+    
+    
+
+    
+}
+.content{
+    /* background-color: rgb(245, 245, 245); */
+    height:400px;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    
+    
+    
+}
+.content::after{
+    content:"";
+    background:url("../Assets/article1.jpg");
+    background-size: cover;
+    position:absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.20;
+}
+.content-left{
+    font-family: var(--font-1);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    
+
+justify-content: center;
+}
+.content-right{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.content-right img{
+    height: 40vh;
+    width: 40vh;
+    border-radius: 200px;
+    border:2px solid black;
+}
+.home-articles{
+padding: 15px;
+
+
+
+
+}  
+.home-article{
+    display: flex;
+    margin:20px;    
+}
+.home-article a{
+    text-decoration: none;
+    color: black;
+}
+.home-article a:hover{
+    font-weight: bolder;
+}
+.home-article img{
+    width: 200px;
+
+    
+}
+.home-article-content{
+    align-self: center;
+    padding:25px;
+}
+
+
+.footer{
+
+
+height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+
+}
+
+
+@media screen and (max-width:800px) {
+    
+    #navigation{
+        flex-direction: column;
+        margin-bottom: 10px;
+        position: relative;
+
+    }
+    .nav-center ul li {
+        padding: 2px;
+    }
+    .content-left{
+        align-self: center;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    .content-right{
+        visibility: hidden;
+    }
+    .home-article img{
+        text-align: center;
+        
+        
+    }
+    .home-article{
+        flex-direction: column;
+        margin: auto;
+         
+    }
+}

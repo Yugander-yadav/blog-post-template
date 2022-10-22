@@ -1,0 +1,20 @@
+.post-image{
+    height: 500px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+.post-image img{
+    
+   width: 100%;
+   height: inherit;
+   object-fit: contain;
+    
+}
+
+.blog-post-content p{
+font-size: 1.5rem;
+}
+.author-info .author{
+    font-size: 1rem;
+    margin-bottom: 1px;
+}

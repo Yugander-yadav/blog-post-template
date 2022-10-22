@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+
+:root {
+    --main-bg-color: brown;
+    --font-1:font-family: 'Baloo Bhaina 2', cursive;
+    --font-2:font-family: 'Roboto', sans-serif;
+}
+
+.max-width-1 {
+    max-width: 80vw;
+}
+
+.max-width-2 {
+    max-width: 60vw;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    
+    padding: 4px;
+    border-radius: 6px;
+    transition:all 0.3s ease-in-out;
+}
+.btn:hover{
+    color: var(--main-bg-color);
+}
+.font1{
+    font-family: var(--font-1);
+}
+.font2{
+    font-family: var(--font-2);
+}
